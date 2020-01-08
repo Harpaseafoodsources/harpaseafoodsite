@@ -1,3 +1,5 @@
+<!-- TODO: Wording, Navbar auto pushdown (only need to fix this), floating arrow-->
+
 <!DOCTYPE html>
 <html lang="en">
   <meta
@@ -62,18 +64,18 @@
         >
           <ul class="navbar-nav ml-auto flex-nowrap">
             <li class="nav-item">
-              <a href="#Home" class="nav-link active" id="homeLink">Home</a>
+              <a href="index.html" class="nav-link" id="homeLink">Home</a>
             </li>
             <li class="nav-item">
-              <a href="#About" class="nav-link" id="aboutLink">Work</a>
+              <a href="index.html#About" class="nav-link" id="aboutLink">Work</a>
             </li>
             <li class="nav-item">
-              <a href="./services.html" class="nav-link" id="servicesLink"
+              <a href="services.html" class="nav-link active" id="servicesLink"
                 >Services</a
               >
             </li>
             <li class="nav-item">
-              <a href="./contact.html" class="nav-link" id="contactLink">Contact</a>
+              <a href="contact.html" class="nav-link" id="contactLink">Contact</a>
             </li>
           </ul>
         </div>
@@ -81,74 +83,56 @@
     </header>
 
     <main>
-      <section id="Home" class="pb-0">
-        <div class="container d-flex">
-          <div
-            class="row align-self-center w-100 mx-auto"
-            style="padding-top: 20%;"
-          >
-            <div
-              class="col-12 text-center"
-              style="background: rgba(255, 255, 255, 0.781); padding-bottom: 2rem; padding-top: 2rem; border-radius: 25px;"
-              id="homeBox"
-            >
-              <h1
-                class="text-dark"
-                style="font-size: 3rem; padding-bottom: 1.5rem;"
-                id="homeText"
-              >
-                <img src="./assets/pictures/unnamed.jpg" alt="Harpa Seafood">
-              </h1>
-              <br />
-              <a
-                class="btn btn-lg btn-outline-dark "
-                style="color: rgb(0, 0, 0); border-color: rgba(0, 0, 0, 0.5);"
-                href="#About"
-                id="homeButton"
-              >
-                Learn More
-              </a>
+      <section id="Services" class="pb-0">
+        <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img class="d-block w-100" src="assets/pictures/seafood-wallpapers_622615256.jpg" alt="First slide">
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100" src="assets/pictures/fish_seafood_meats_shell_70198_1920x1080.jpg" alt="Second slide">
             </div>
           </div>
         </div>
-        <div
-          class="col-12 text-center align-bottom fixed-bottom"
-          id="downArrow"
-        >
-          <a
-            class="fas fa-chevron-down fa-2x grow nav-link"
-            href="#About"
-            id="homeArrow"
-          ></a>
-        </div>
       </section>
 
-      <section id="About" class="pb-0">
+      <section id="Services2" class="pb-0">
         <div>
           <article id="topOfPage">
-            <div class="container w-70">
+            <div class="container w-80 mw-80">
+              <h1 class="text-center pb-3">
+                Services
+              </h1>
               <div class="row w-100 mx-auto">
-                <div class="col-12 text-center">
-                  <h1 class="text-center pb-3">
-                    Lorem ipsum dolor sit amet, 
-                  </h1>
+                <div class="col text-center">
+                  <h2 class="text-center pb-3">
+                    Fish
+                  </h2>
                   <p class="lead">
                    consectetur adipiscing elit. Nunc vitae volutpat ipsum. Duis sollicitudin tincidunt metus et volutpat. Nam sit amet eleifend ipsum. Aliquam commodo sapien in mollis ultricies. Maecenas fringilla luctus tortor non tempor. Quisque eget lobortis leo, sit amet blandit augue. Praesent sed dictum elit, elementum vestibulum lorem. Integer ut nibh eget dolor molestie tempus. Sed augue velit, vestibulum vel malesuada in, suscipit a augue. In nulla ipsum, eleifend ut nibh eget, vehicula tempus diam.
                   </p>
+                </div>
+                <div class="col text-center">
+                  <h2 class="text-center pb-3">
+                    Containers
+                  </h2>
                   <p class="lead">
-                    Nunc finibus fringilla ex et commodo. Fusce id finibus elit. Nulla tempus eros augue, in laoreet sapien sagittis sit amet. Suspendisse dui lacus, luctus in neque et, gravida pharetra lectus. Maecenas at egestas lectus. Praesent sit amet diam maximus, molestie sapien eu, porttitor tellus. Vivamus purus ipsum, imperdiet in leo sit amet, fringilla dictum sem. Donec ut nisl turpis. Integer ac ultrices est, sit amet malesuada lectus.
+                   consectetur adipiscing elit. Nunc vitae volutpat ipsum. Duis sollicitudin tincidunt metus et volutpat. Nam sit amet eleifend ipsum. Aliquam commodo sapien in mollis ultricies. Maecenas fringilla luctus tortor non tempor. Quisque eget lobortis leo, sit amet blandit augue. Praesent sed dictum elit, elementum vestibulum lorem. Integer ut nibh eget dolor molestie tempus. Sed augue velit, vestibulum vel malesuada in, suscipit a augue. In nulla ipsum, eleifend ut nibh eget, vehicula tempus diam.
                   </p>
+                </div>
+                <div class="col text-center">
+                  <h2 class="text-center pb-3">
+                    Selling
+                  </h2>
                   <p class="lead">
-                    Phasellus tellus lorem, tempor eget lacinia vel, sollicitudin ac ipsum. In id enim semper, vestibulum risus at, rutrum velit. Vivamus a rhoncus nunc, vitae scelerisque mauris. Curabitur vitae nisl sollicitudin, sagittis nunc non, molestie odio. Proin quis ipsum vulputate, congue sapien sit amet, mollis quam. Pellentesque non elit tempor, gravida dui sed, vehicula libero. Donec at sem nisi. Quisque et felis a leo molestie luctus. Curabitur enim tellus, vehicula quis viverra quis, ornare nec quam. Pellentesque gravida sed ligula ut dictum.
-                  </p>
-                  <p class="lead">
-                    Praesent non tincidunt mi. Pellentesque elementum sagittis ex, at hendrerit orci aliquet et. Donec aliquam posuere risus, quis pulvinar orci rhoncus eget. Maecenas suscipit quis ex in malesuada. Nam semper massa finibus, facilisis urna et, euismod quam. Duis efficitur mauris et nibh fermentum eleifend. Nulla tempus elit turpis, sed congue eros maximus a. Vestibulum eleifend rutrum libero, quis faucibus magna euismod in. Sed consectetur ante ac tempus pellentesque. Quisque consequat dolor lorem. Fusce cursus ac sem in tincidunt. Mauris consectetur erat at sem vulputate, ut egestas lorem hendrerit. Suspendisse blandit tempus dolor, ac ullamcorper erat dapibus eget. Mauris nec erat id felis dignissim eleifend eu at nulla. Praesent lobortis mi ut turpis tempor sollicitudin. Sed dictum ante semper eros consequat ultricies.
+                   consectetur adipiscing elit. Nunc vitae volutpat ipsum. Duis sollicitudin tincidunt metus et volutpat. Nam sit amet eleifend ipsum. Aliquam commodo sapien in mollis ultricies. Maecenas fringilla luctus tortor non tempor. Quisque eget lobortis leo, sit amet blandit augue. Praesent sed dictum elit, elementum vestibulum lorem. Integer ut nibh eget dolor molestie tempus. Sed augue velit, vestibulum vel malesuada in, suscipit a augue. In nulla ipsum, eleifend ut nibh eget, vehicula tempus diam.
                   </p>
                 </div>
               </div>
             </div>
           </article>
-          <!-- A spacer and a line for asiatic -->
+          
+
           <div class="container w-100 justify-content-center">
             <svg style="width:100%;" height="100">
               <rect

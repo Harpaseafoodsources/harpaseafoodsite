@@ -1,0 +1,111 @@
+body {
+  background: url("../assets/pictures/seafood-wallpapers_622615256.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  height: 100%;
+  max-width: 100%;
+  -webkit-transition-timing-function: ease;
+  -o-transition-timing-function: ease;
+  transition-timing-function: ease;
+  -webkit-transition-duration: 0.35s;
+  -o-transition-duration: 0.35s;
+  transition-duration: 0.35s;
+  -webkit-transition-property: padding-top;
+  -o-transition-property: padding-top;
+  transition-property: padding-top;
+}
+
+.navbar,
+.transparent .navbar-inverse .navbar-inner {
+  transition: all 0.5s ease;
+  background: rgb(255, 255, 255);
+}
+
+.footer {
+  position: flex;
+  bottom: 0;
+  width: 100%;
+  line-height: 2rem;
+  background: rgb(255, 255, 255);
+  -webkit-transition: width 2s; /* Safari */
+  transition: width 4s;
+}
+
+.grow {
+  transition: all 0.2s ease-in-out;
+  padding: 0.2rem;
+}
+.grow:hover {
+  transform: scale(1.5);
+}
+
+#Home,
+#FrontPage {
+  height: 100vh;
+}
+
+#topSpacer {
+  height: 25vh;
+}
+
+#About,
+#Contact,
+#Services2,
+.subSections {
+  padding-top: 100px;
+  padding-bottom: 69px;
+  background-color: rgb(255, 255, 255);
+  max-width: 100%;
+  margin-left: 0%;
+}
+
+::-webkit-scrollbar {
+  width: 0px;
+}
+
+#downArrow {
+  color: rgb(0, 0, 0);
+}
+
+.btn-circle {
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  padding: 6px 0;
+  font-size: 12px;
+  line-height: 1.428571429;
+  border-radius: 15px;
+}
+.btn-circle.btn-lg {
+  width: 50px;
+  height: 50px;
+  padding: 10px 16px;
+  font-size: 18px;
+  line-height: 1.33;
+  border-radius: 25px;
+}
+.btn-circle.btn-xl {
+  width: 70px;
+  height: 70px;
+  padding: 10px 16px;
+  font-size: 24px;
+  line-height: 1.33;
+  border-radius: 35px;
+}
+
+.stepper-text {
+  padding-left: 5rem;
+  padding-top: 0.6rem;
+}
+
+.prettyprint {
+  display: block;
+  color: #000000;
+}
+
+.fa-chevron-down {
+  text-decoration: none;
+  color: black;
+}
