@@ -33,18 +33,18 @@
   </head>
 
   <body>
-    <header class="fixed-top d-block" id="topNav">
+    <header class="fixed-top">
       <nav
         class="navbar navbar-expand-lg navbar-light"
         id="navBarTop"
-        style="font-size: 1.3rem;"
+        style="font-size: 1.2rem;"
       >
         <div class="d-flex flex-grow-1">
           <span class="w-100 d-lg-none d-block"
             ><!-- hidden spacer to center brand on mobile --></span
           >
-          <a class="navbar-brand" href="index.html" style="font-size: 1.8rem;">
-            Harpa Seafood
+          <a class="navbar-brand" href="index.html">
+          <img  style="height: 6rem" src="./assets/pictures/logo.svg" alt="Harpa Seafood">
           </a>
           <div class="w-100 text-right">
             <button
@@ -64,18 +64,15 @@
         >
           <ul class="navbar-nav ml-auto flex-nowrap">
             <li class="nav-item">
-              <a href="index.html" class="nav-link" id="homeLink">Home</a>
+              <a href="./index.html" class="nav-link" id="homeLink">Home</a>
             </li>
             <li class="nav-item">
-              <a href="index.html#About" class="nav-link" id="aboutLink">Work</a>
-            </li>
-            <li class="nav-item">
-              <a href="services.html" class="nav-link" id="servicesLink"
+              <a href="./services.html" class="nav-link" id="servicesLink"
                 >Services</a
               >
             </li>
             <li class="nav-item">
-              <a href="contact.html" class="nav-link active" id="contactLink">Contact</a>
+              <a href="#About" class="nav-link active" id="contactLink">Contact</a>
             </li>
           </ul>
         </div>
@@ -83,27 +80,60 @@
     </header>
 
     <main>
-      <section id="About" class="pb-0">
+      <section id="About" class="p-0">
         <div>
           <article id="topOfPage">
             <div class="container w-70">
               <div class="row w-100 mx-auto">
-                <div class="col-12 text-center">
+                <div class="col-12 text-justify">
                   <h1 class="text-center pb-3">
-                    Lorem ipsum dolor sit amet, 
+                    Contact Me
                   </h1>
-                  <p class="lead">
-                   consectetur adipiscing elit. Nunc vitae volutpat ipsum. Duis sollicitudin tincidunt metus et volutpat. Nam sit amet eleifend ipsum. Aliquam commodo sapien in mollis ultricies. Maecenas fringilla luctus tortor non tempor. Quisque eget lobortis leo, sit amet blandit augue. Praesent sed dictum elit, elementum vestibulum lorem. Integer ut nibh eget dolor molestie tempus. Sed augue velit, vestibulum vel malesuada in, suscipit a augue. In nulla ipsum, eleifend ut nibh eget, vehicula tempus diam.
-                  </p>
-                  <p class="lead">
-                    Nunc finibus fringilla ex et commodo. Fusce id finibus elit. Nulla tempus eros augue, in laoreet sapien sagittis sit amet. Suspendisse dui lacus, luctus in neque et, gravida pharetra lectus. Maecenas at egestas lectus. Praesent sit amet diam maximus, molestie sapien eu, porttitor tellus. Vivamus purus ipsum, imperdiet in leo sit amet, fringilla dictum sem. Donec ut nisl turpis. Integer ac ultrices est, sit amet malesuada lectus.
-                  </p>
-                  <p class="lead">
-                    Phasellus tellus lorem, tempor eget lacinia vel, sollicitudin ac ipsum. In id enim semper, vestibulum risus at, rutrum velit. Vivamus a rhoncus nunc, vitae scelerisque mauris. Curabitur vitae nisl sollicitudin, sagittis nunc non, molestie odio. Proin quis ipsum vulputate, congue sapien sit amet, mollis quam. Pellentesque non elit tempor, gravida dui sed, vehicula libero. Donec at sem nisi. Quisque et felis a leo molestie luctus. Curabitur enim tellus, vehicula quis viverra quis, ornare nec quam. Pellentesque gravida sed ligula ut dictum.
-                  </p>
-                  <p class="lead">
-                    Praesent non tincidunt mi. Pellentesque elementum sagittis ex, at hendrerit orci aliquet et. Donec aliquam posuere risus, quis pulvinar orci rhoncus eget. Maecenas suscipit quis ex in malesuada. Nam semper massa finibus, facilisis urna et, euismod quam. Duis efficitur mauris et nibh fermentum eleifend. Nulla tempus elit turpis, sed congue eros maximus a. Vestibulum eleifend rutrum libero, quis faucibus magna euismod in. Sed consectetur ante ac tempus pellentesque. Quisque consequat dolor lorem. Fusce cursus ac sem in tincidunt. Mauris consectetur erat at sem vulputate, ut egestas lorem hendrerit. Suspendisse blandit tempus dolor, ac ullamcorper erat dapibus eget. Mauris nec erat id felis dignissim eleifend eu at nulla. Praesent lobortis mi ut turpis tempor sollicitudin. Sed dictum ante semper eros consequat ultricies.
-                  </p>
+                    <form id="fs-frm" name="simple-contact-form" accept-charset="utf-8" action="https://formspree.io/xknqqrjv" method="post">
+                      <div class="form-group text-center" style="font-size: 1.2rem;">
+                        <label for="full-name">Full Name</label>
+                        <input type="text" name="name" class="form-control" id="full-name" placeholder="John Smith" required="">
+
+                      </div>
+                      <div class="form-group text-center" style="font-size: 1.2rem;">
+                        <label for="exampleFormControlInput1">Email address</label>
+                        <input type="email" name="sender" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com" required="">
+                      </div>
+                      <div class="form-group text-center" style="font-size: 1.2rem;">
+                        <label for="exampleFormControlTextarea1">Message</label>
+                        <textarea name="message" class="form-control" id="exampleFormControlTextarea1" rows="10"></textarea>
+                      </div>
+                      <button type="submit" class="btn btn-primary">Submit</button>
+                    </form>
+<!-- 
+                    <form id="fs-frm" name="simple-contact-form" accept-charset="utf-8" action="https://formspree.io/xknqqrjv" method="post">
+                      <fieldset id="fs-frm-inputs">
+                        <label for="full-name">Full Name</label>
+                        <input type="text" name="name" id="full-name" placeholder="First and Last" required="">
+                        <label for="email-address">Email Address</label>
+                        <input type="email" name="_replyto" id="email-address" placeholder="email@domain.tld" required="">
+                        <label for="message">Message</label>
+                        <textarea rows="5" name="message" id="message" placeholder="Aenean lacinia bibendum nulla sed consectetur. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Donec ullamcorper nulla non metus auctor fringilla nullam quis risus." required=""></textarea>
+                        <input type="hidden" name="_subject" id="email-subject" value="Contact Form Submission">
+                      </fieldset>
+                      <input type="submit" value="Submit">
+                    </form>
+                    <form>
+                      <div class="form-group">
+                        <label for="exampleInputEmail1">Email address</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                        <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                      </div>
+                      <div class="form-group">
+                        <label for="exampleInputPassword1">Password</label>
+                        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                      </div>
+                      <div class="form-check">
+                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                        <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                      </div>
+                      <button type="submit" class="btn btn-primary">Submit</button>
+                    </form> -->
                 </div>
               </div>
             </div>
@@ -131,69 +161,34 @@
     </main>
 
     <!-- Footer -->
-    <footer class="footer">
+    <footer class="footer static-bottom">
       <div class="container">
         <span class="w-100 d-lg-none d-block"></span>
         <div class="row w-100 mx-auto">
-          <div class="col-4 text-center mt-2">
-            <p class="text-dark">
-              Created by <a target="_blank" href=https://basmaat.com>Bas Maat</a>
-              <br>
-              With bootstrap 4
-            </p>
-          </div>
-          <div class="col-8 text-center mt-2">
+          <div class="col-12 text-center">
             <div class="row">
               <div class="col-12 text-center">
-                <p class="text-dark">Social media: <br /></p>
+                <p class="text-dark m-0">Social media: <br /></p>
               </div>
             </div>
-            <div class="row">
+            <div class="row mt-2">
               <div class="col-12 justify-content-center pb-2">
                 <a
-                  class="fab fa-twitter fa-2x mt-4 twitter-follow-button grow"
-                  href="https://twitter.com/revess3?ref_src=twsrc%5Etfw"
+                  class="fab fa-twitter fa-2x twitter-follow-button grow "
+                  href="#"
                   style="text-decoration: none; color: rgb(56,161,243);"
                   data-show-count="false"
                 ></a>
                 <a
-                  class="fab fa-github fa-2x mt-4 grow"
-                  href="https://github.com/Revess"
-                  style="text-decoration: none; color: #ffffff;"
-                  target="_blank"
-                  data-show-count="false"
-                ></a>
-                <a
-                  class="fab fa-spotify fa-2x mt-4 grow"
-                  href="https://open.spotify.com/artist/59LdOI4lUcKDvOjC5YQoKB"
-                  style="text-decoration: none; color: #1ED761;"
-                  target="_blank"
-                  data-show-count="false"
-                ></a>
-                <a
-                  class="fab fa-soundcloud fa-2x mt-4 grow"
-                  href="https://soundcloud.com/re_vess"
-                  style="text-decoration: none; color: #FE6D35;"
-                  target="_blank"
-                  data-show-count="false"
-                ></a>
-                <a
-                  class="fab fa-linkedin fa-2x mt-4 grow"
-                  href="https://www.linkedin.com/in/bas-m-35b479132/"
+                  class="fab fa-linkedin fa-2x grow"
+                  href="https://www.linkedin.com/in/silmara-laetano/"
                   style="text-decoration: none; color: #0077B5;"
                   target="_blank"
                   data-show-count="false"
                 ></a>
                 <a
-                  class="fab fa-youtube fa-2x mt-4 grow"
-                  href="https://www.youtube.com/re_vess?sub_confirmation=1"
-                  target="_blank"
-                  style="text-decoration: none; color: #FF0000;"
-                  data-show-count="false"
-                ></a>
-                <a
-                  class="fab fa-instagram fa-2x mt-4 grow"
-                  href="https://www.instagram.com/re_vess/"
+                  class="fab fa-instagram fa-2x grow"
+                  href="https://www.instagram.com/sil_laetano/"
                   style="text-decoration: none; color: #fb3958;"
                   target="_blank"
                   data-show-count="false"

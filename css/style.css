@@ -1,26 +1,18 @@
 body {
-  background: url("../assets/pictures/seafood-wallpapers_622615256.jpg");
+  background: white;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
   background-attachment: fixed;
   height: 100%;
   max-width: 100%;
-  -webkit-transition-timing-function: ease;
-  -o-transition-timing-function: ease;
-  transition-timing-function: ease;
-  -webkit-transition-duration: 0.35s;
-  -o-transition-duration: 0.35s;
-  transition-duration: 0.35s;
-  -webkit-transition-property: padding-top;
-  -o-transition-property: padding-top;
-  transition-property: padding-top;
 }
 
 .navbar,
 .transparent .navbar-inverse .navbar-inner {
   transition: all 0.5s ease;
   background: rgb(255, 255, 255);
+  font-size: 1.5rem !important;
 }
 
 .footer {
@@ -54,8 +46,8 @@ body {
 #Contact,
 #Services2,
 .subSections {
-  padding-top: 100px;
-  padding-bottom: 69px;
+  padding-top: 50px;
+  padding-bottom: 50px;
   background-color: rgb(255, 255, 255);
   max-width: 100%;
   margin-left: 0%;
